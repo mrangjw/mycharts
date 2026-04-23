@@ -1,9 +1,9 @@
 #!/bin/bash
 # ============================================================
 # 목적: Helm chart를 GitHub Pages 기반 Helm Chart Repository에 push
-#       → https://himang10.github.io/mycharts 에서 서빙
+#       → https://mrangjw.github.io/mycharts 에서 서빙
 # 전제: mycharts git repo가 로컬에 clone되어 있어야 함
-#       예) git clone https://github.com/himang10/mycharts
+#       예) git clone https://github.com/mrangjw/mycharts
 # 사용: bash 04-3.push-git.sh
 # ============================================================
 
@@ -15,7 +15,7 @@ CHART_VERSION="0.0.2"
 CHART_DIR="./myfirst-api-server"
 
 # GitHub Pages Helm repo 로컬 경로 (git clone된 위치)
-PAGES_URL="https://himang10.github.io/mycharts"
+PAGES_URL="https://mrangjw.github.io/mycharts"
 
 # ── 1) 차트 패키징 (.tgz 생성) ───────────────────────────────
 helm package ${CHART_DIR} --version ${CHART_VERSION}
